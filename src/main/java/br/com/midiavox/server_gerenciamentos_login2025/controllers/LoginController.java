@@ -34,7 +34,7 @@ public class LoginController {
         } else {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(resposta); // 401 Unauthorized
         }
-    }
+    } //testando integracion de git en spring boot
 
     @PostMapping("/cadastro")
     public ResponseEntity<String> cadastrarUsuario(@RequestBody Usuario usuario) {
