@@ -1,33 +1,30 @@
-HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
-
-### STS ###
-.apt_generated
+# Ignorar carpetas comunes de IDE
+/.idea/
+/*.iml
+/.vscode/
+/.settings/
+/.project
 .classpath
 .factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+# Maven output
+/target/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+# Archivos del sistema
+.DS_Store
+Thumbs.db
 
-### VS Code ###
-.vscode/
+# Archivos temporales
+*.log
+
+# Ignorar credenciales (si agregas en el futuro)
+application-secret.properties
+
+# Ignorar sistema operativo
+*.swp
+*.bak
+
+# Maven wrapper (opcional si no lo usás)
+.mvn/
+mvnw
+mvnw.cmd
